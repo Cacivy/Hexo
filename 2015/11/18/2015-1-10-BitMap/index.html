@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>BitMap | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="来自于《编程珠玑》。所谓的Bit-map就是用一个bit位来标记某个元素对应的Value， 而Key即是该元素。由于采用了Bit为单位来存储数据，因此在存储空间方面，可以大大节省。
+
+如果说了这么多还没明白什么是Bit-map，那么我们来看一个具体的例子，假设我们要对0-7内的5个元素(4,7,2,5,3)排序（这里假设这些元素没有重复）。那么我们就可以采用Bit-map的方法来达到排序的目的。要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BitMap">
+<meta property="og:url" content="http://yoursite.com/2015/11/18/2015-1-10-BitMap/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="来自于《编程珠玑》。所谓的Bit-map就是用一个bit位来标记某个元素对应的Value， 而Key即是该元素。由于采用了Bit为单位来存储数据，因此在存储空间方面，可以大大节省。
+
+如果说了这么多还没明白什么是Bit-map，那么我们来看一个具体的例子，假设我们要对0-7内的5个元素(4,7,2,5,3)排序（这里假设这些元素没有重复）。那么我们就可以采用Bit-map的方法来达到排序的目的。要">
+<meta property="og:updated_time" content="2015-11-18T03:36:34.899Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="BitMap">
+<meta name="twitter:description" content="来自于《编程珠玑》。所谓的Bit-map就是用一个bit位来标记某个元素对应的Value， 而Key即是该元素。由于采用了Bit为单位来存储数据，因此在存储空间方面，可以大大节省。
+
+如果说了这么多还没明白什么是Bit-map，那么我们来看一个具体的例子，假设我们要对0-7内的5个元素(4,7,2,5,3)排序（这里假设这些元素没有重复）。那么我们就可以采用Bit-map的方法来达到排序的目的。要">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,70 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-2015-1-16-Singleton" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/18/2015-1-16-Singleton/" class="article-date">
-  <time datetime="2015-11-18T03:38:03.637Z" itemprop="datePublished">2015-11-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/18/2015-1-16-Singleton/">Singleton</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###单例模式</p>
-<p><a href="http://zh.wikipedia.org/wiki/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F" target="_blank" rel="external">Wiki</a></p>
-<blockquote>
-<p>单例模式，也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。</p>
-</blockquote>
-<h3 id="要点">要点</h3><ol>
-<li>某个类只能有一个实例</li>
-<li>必须自行创建这个实例</li>
-<li>必须自行向整个系统提供这个实例</li>
-</ol>
-<!--break-->
-<h4 id="构建方式">构建方式</h4><ul>
-<li>懒汉方式。指全局的单例实例在第一次被使用时构建。</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton&#10;&#123;&#10;    //volatile:&#19981;&#34987;&#32447;&#31243;&#35775;&#38382;&#21644;&#20462;&#25913;&#10;    private static volatile Singleton Instance = null;&#10;    private static object _lock = new object();&#10;    //&#31169;&#26377;&#26500;&#36896;&#10;    private Singleton() &#123; &#125;&#10;    //&#38145;&#23450;&#23545;&#35937;&#21482;&#33021;&#34987;&#19968;&#20010;&#32447;&#31243;&#35775;&#38382;&#24182;&#36820;&#22238;&#10;    public static Singleton getInstance()&#10;    &#123;&#10;        if (Instance == null)&#10;        &#123;&#10;            lock (_lock)&#10;            &#123;&#10;                if (Instance == null)&#10;                &#123;&#10;                    Instance=new Singleton();&#10;                &#125;&#10;            &#125;&#10;        &#125;&#10;        return Instance;&#10;    &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>上述代码使用了双重锁方式较好地解决了多线程下的单例模式实现。先看内层的if语句块，使用这个语句块时，先进行加锁操作，保证只有一个线程可以访问该语句块，进而保证只创建了一个实例。再看外层的if语句块，这使得每个线程欲获取实例时不必每次都得加锁，因为只有实例为空时（即需要创建一个实例），才需加锁创建，若果已存在一个实例，就直接返回该实例，节省了性能开销。</p>
-</blockquote>
-<ul>
-<li>饿汉方式。指全局的单例实例在类装载时构建。</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton&#10;&#123;&#10;    //&#23454;&#20363;&#31169;&#26377;&#21482;&#35835;&#23545;&#35937;&#10;    private static readonly Singleton Instance = new Singleton();&#10;    //&#31169;&#26377;&#26500;&#36896;&#10;    private Singleton()&#123;&#125;&#10;    //&#36820;&#22238;&#23545;&#35937;&#10;    public static Singleton GetInstance()&#10;    &#123;&#10;        return Instance;&#10;    &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>上面使用的readonly关键可以跟static一起使用，用于指定该常量是类别级的，它的初始化交由静态构造函数实现，并可以在运行时编译。在这种模式下，无需自己解决线程安全性问题，CLR会给我们解决。由此可以看到这个类被加载时，会自动实例化这个类，而不用在第一次调用GetInstance()后才实例化出唯一的单例对象。</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/18/2015-1-16-Singleton/" data-id="cih49cpbm0001est70vbwyszq" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-2015-1-10-BitMap" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-2015-1-10-BitMap" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/18/2015-1-10-BitMap/" class="article-date">
   <time datetime="2015-11-18T03:36:34.947Z" itemprop="datePublished">2015-11-18</time>
@@ -135,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/18/2015-1-10-BitMap/">BitMap</a>
+    <h1 class="article-title" itemprop="name">
+      BitMap
     </h1>
   
 
@@ -166,110 +110,29 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-2015-11-1-helloworld" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/18/2015-11-1-helloworld/" class="article-date">
-  <time datetime="2015-11-18T03:24:18.597Z" itemprop="datePublished">2015-11-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2015/11/18/2015-1-16-Singleton/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/18/2015-11-1-helloworld/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/18/2015-11-1-helloworld/" data-id="cih48xkuu00001wt7vnkmtiax" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-About" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/12/22/About/" class="article-date">
-  <time datetime="2014-12-21T16:00:00.000Z" itemprop="datePublished">2014-12-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          Singleton
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/22/About/">About</a>
-    </h1>
   
+    <a href="/2015/11/18/2015-11-1-helloworld/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>关于这个博客</li>
-</ul>
-<blockquote>
-<p><a href="http://otherid.github.io/jekyll_demo/index.html" target="_blank" rel="external">Gitpage原地址</a>,从jekyll迁移到Hexo,感觉不错</p>
-<p>因为毕竟是个静态页面，布局都是自己用sublime text码的，也反复修改过不少次</p>
-<p>首页参照了WordPress主题Winnd，感谢作者<a href="http://lizimu.net/" target="_blank" rel="external">子木</a></p>
-<p>以及自己的<a href="http://preciouser.diandian.com/" target="_blank" rel="external">点点博客</a></p>
-</blockquote>
-<ul>
-<li>关于我</li>
-</ul>
-<blockquote>
-<p>投身.NET的Google粉</p>
-<p>To be Full Stack developer</p>
-<p>以上</p>
-</blockquote>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while(successed)&#123;&#10;&#9;coding();&#10;&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/12/22/About/" data-id="cih48yb8y0000fgt7khefmwqr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
 
-
-  
-  
 </section>
         
           <aside id="sidebar">
