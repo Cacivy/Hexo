@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Algorithm,Java," />
+  <meta name="keywords" content="Algorithm,C#," />
 
 
 
@@ -51,22 +51,43 @@
 
 
 
-<meta name="description" content="来自于《编程珠玑》。所谓的Bit-map就是用一个bit位来标记某个元素对应的Value， 而Key即是该元素。由于采用了Bit为单位来存储数据，因此在存储空间方面，可以大大节省。
+<meta name="description" content="###快速排序
+Wiki
 
-如果说了这么多还没明白什么是Bit-map，那么我们来看一个具体的例子，假设我们要对0-7内的5个元素(4,7,2,5,3)排序（这里假设这些元素没有重复）。那么我们就可以采用Bit-map的方法来达到排序的目的。要">
+快速排序是由东尼·霍尔所发展的一种排序算法。在平均状况下，排序 n 个项目要Ο(n log n)次比较。在最坏状况下则需要Ο(n2)次比较，但这种状况并不常见。事实上，快速排序通常明显比其他Ο(n log n) 算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。
+
+
+算法
+
+
+快速排序使用分治法（Divide and conqu">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BitMap">
-<meta property="og:url" content="http://yoursite.com/2015/01/10/BitMap/index.html">
+<meta property="og:title" content="QuickSort">
+<meta property="og:url" content="http://yoursite.com/2015/01/16/QuickSort/index.html">
 <meta property="og:site_name" content="Cacivy">
-<meta property="og:description" content="来自于《编程珠玑》。所谓的Bit-map就是用一个bit位来标记某个元素对应的Value， 而Key即是该元素。由于采用了Bit为单位来存储数据，因此在存储空间方面，可以大大节省。
+<meta property="og:description" content="###快速排序
+Wiki
 
-如果说了这么多还没明白什么是Bit-map，那么我们来看一个具体的例子，假设我们要对0-7内的5个元素(4,7,2,5,3)排序（这里假设这些元素没有重复）。那么我们就可以采用Bit-map的方法来达到排序的目的。要">
-<meta property="og:updated_time" content="2015-12-09T02:52:37.054Z">
+快速排序是由东尼·霍尔所发展的一种排序算法。在平均状况下，排序 n 个项目要Ο(n log n)次比较。在最坏状况下则需要Ο(n2)次比较，但这种状况并不常见。事实上，快速排序通常明显比其他Ο(n log n) 算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。
+
+
+算法
+
+
+快速排序使用分治法（Divide and conqu">
+<meta property="og:updated_time" content="2015-12-09T02:59:36.039Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BitMap">
-<meta name="twitter:description" content="来自于《编程珠玑》。所谓的Bit-map就是用一个bit位来标记某个元素对应的Value， 而Key即是该元素。由于采用了Bit为单位来存储数据，因此在存储空间方面，可以大大节省。
+<meta name="twitter:title" content="QuickSort">
+<meta name="twitter:description" content="###快速排序
+Wiki
 
-如果说了这么多还没明白什么是Bit-map，那么我们来看一个具体的例子，假设我们要对0-7内的5个元素(4,7,2,5,3)排序（这里假设这些元素没有重复）。那么我们就可以采用Bit-map的方法来达到排序的目的。要">
+快速排序是由东尼·霍尔所发展的一种排序算法。在平均状况下，排序 n 个项目要Ο(n log n)次比较。在最坏状况下则需要Ο(n2)次比较，但这种状况并不常见。事实上，快速排序通常明显比其他Ο(n log n) 算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。
+
+
+算法
+
+
+快速排序使用分治法（Divide and conqu">
 
 
 
@@ -78,7 +99,7 @@
   };
 </script>
 
-  <title> BitMap | Cacivy </title>
+  <title> QuickSort | Cacivy </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -218,7 +239,7 @@
             
             
               
-                BitMap
+                QuickSort
               
             
           </h1>
@@ -227,8 +248,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-01-10T00:00:00+08:00" content="2015-01-10">
-              2015-01-10
+            <time itemprop="dateCreated" datetime="2015-01-16T00:00:00+08:00" content="2015-01-16">
+              2015-01-16
             </time>
           </span>
 
@@ -266,19 +287,32 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>来自于《编程珠玑》。所谓的Bit-map就是用一个bit位来标记某个元素对应的Value， 而Key即是该元素。由于采用了Bit为单位来存储数据，因此在存储空间方面，可以大大节省。</p>
+        <span itemprop="articleBody"><p>###快速排序</p>
+<p><a href="http://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F" target="_blank" rel="external">Wiki</a></p>
+<blockquote>
+<p>快速排序是由东尼·霍尔所发展的一种排序算法。在平均状况下，排序 n 个项目要Ο(n log n)次比较。在最坏状况下则需要Ο(n2)次比较，但这种状况并不常见。事实上，快速排序通常明显比其他Ο(n log n) 算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。</p>
 </blockquote>
-<p>如果说了这么多还没明白什么是Bit-map，那么我们来看一个具体的例子，假设我们要对0-7内的5个元素(4,7,2,5,3)排序（这里假设这些元素没有重复）。那么我们就可以采用Bit-map的方法来达到排序的目的。要表示8个数，我们就只需要8个Bit（1Bytes），首先我们开辟1Byte的空间，将这些空间的所有Bit位都置为0</p>
-<p>然后遍历这5个元素，首先第一个元素是4，那么就把4对应的位置为1（可以这样操作 <code>p+(i/8)|(0×01&lt;&lt;(i%8)</code>)当然了这里的操作涉及到Big-ending和Little-ending的情况，这里默认为Big-ending）,因为是从零开始的，所以要把第五位置为1</p>
-<p>然后再处理第二个元素7，将第八位置为1,，接着再处理第三个元素，一直到最后处理完所有的元素，将相应的位置为1。</p>
-<p>然后我们现在遍历一遍Bit区域，将该位是一的位的编号输出（2，3，4，5，7），这样就达到了排序的目的。</p>
-<p>其实就是把计数排序用的统计数组的每个单位缩小成bit级别的布尔数组</p>
+<ul>
+<li>算法</li>
+</ul>
+<blockquote>
+<p>快速排序使用分治法（Divide and conquer）策略来把一个序列（list）分为两个子序列（sub-lists）。<br>步骤为：</p>
+</blockquote>
+<ol>
+<li><p>从数列中挑出一个元素，称为 “基准”（pivot）</p>
+</li>
+<li><p>重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区（partition）操作。</p>
+</li>
+<li><p>递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序。</p>
+</li>
+</ol>
 <a id="more"></a>
 <ul>
-<li>二分法(JAVA)</li>
+<li>Code</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BubbleTest</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">binary</span><span class="params">(<span class="keyword">int</span>[] array, <span class="keyword">int</span> value)</span></span><br><span class="line">	</span>&#123;</span><br><span class="line">		<span class="keyword">int</span> low = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> high = array.length - <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(low &lt;= high)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">int</span> middle = (low + high) / <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">if</span>(value == array[middle])</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span> middle;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(value &gt; array[middle])</span><br><span class="line">		&#123;</span><br><span class="line">			low = middle + <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(value &lt; array[middle])</span><br><span class="line">		&#123;</span><br><span class="line">			high = middle - <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span><br><span class="line">	</span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] a = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>&#125;;</span><br><span class="line">		<span class="keyword">int</span> value = binary(a, <span class="number">9</span>);</span><br><span class="line">		System.out.println(value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">QuickSort</span>&#123;    </span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span>&#123;</span><br><span class="line">        <span class="comment">//声明数组</span></span><br><span class="line">        <span class="keyword">int</span>[] arr=&#123;<span class="number">2</span>,<span class="number">0</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">7</span>,<span class="number">6</span>,<span class="number">3</span>&#125;;</span><br><span class="line">        <span class="comment">//调用排序方法</span></span><br><span class="line">        Sort(arr,<span class="number">0</span>,arr.Lenthg-<span class="number">1</span>);</span><br><span class="line">        Console.ReadKey();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;summary&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="xmlDocTag">///</span> 快速排序</span></span><br><span class="line">    <span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;/summary&gt;</span></span></span><br><span class="line">    <span class="comment"><span class="xmlDocTag">///</span> <span class="xmlDocTag">&lt;param name="arr"&gt;</span>数组<span class="xmlDocTag">&lt;/param&gt;</span></span></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Sort</span>(<span class="params"><span class="keyword">int</span>[] arr,<span class="keyword">int</span> low,<span class="keyword">int</span> high</span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">        <span class="comment">//获取数组中间数</span></span><br><span class="line">        <span class="keyword">int</span> middle = arr[(low+high)/<span class="number">2</span>];</span><br><span class="line">        <span class="comment">//赋值</span></span><br><span class="line">        <span class="keyword">int</span> i = low, j= high;</span><br><span class="line">        <span class="comment">//输出i,j,middle</span></span><br><span class="line">        Console.WriteLine(i + <span class="string">"\t"</span> + j+<span class="string">"\t"</span>+middle);</span><br><span class="line">        <span class="keyword">while</span> (i &lt;= j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span> (arr[i] &lt; middle&amp;&amp;i&lt;high) i++;</span><br><span class="line">            <span class="keyword">while</span> (arr[j] &gt; middle&amp;&amp;j&gt;low) j--;</span><br><span class="line">            <span class="keyword">if</span> (i &lt;= j)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">int</span> temp = arr[i];</span><br><span class="line">                arr[i] = arr[j];</span><br><span class="line">                arr[j] = temp;</span><br><span class="line">                i++;</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//输出数组</span></span><br><span class="line">        Console.WriteLine(<span class="keyword">string</span>.Join(<span class="string">","</span>, arr));</span><br><span class="line">        <span class="comment">//尾递归</span></span><br><span class="line">        <span class="keyword">if</span>(j&gt;low) Sort(arr,low,j);</span><br><span class="line">        <span class="keyword">if</span>(i&lt;high) Sort(arr, i, high);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </span>
       
     </div>
@@ -289,7 +323,7 @@
           
             <a href="/tags/Algorithm/" rel="tag">#Algorithm</a>
           
-            <a href="/tags/Java/" rel="tag">#Java</a>
+            <a href="/tags/C/" rel="tag">#C#</a>
           
         </div>
       
@@ -298,12 +332,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2015/01/10/BitMap/" rel="next" title="BitMap">
+                <i class="fa fa-chevron-left"></i> BitMap
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/01/16/QuickSort/" rel="prev" title="QuickSort">
-                QuickSort <i class="fa fa-chevron-right"></i>
+              <a href="/2015/01/16/Singleton/" rel="prev" title="Singleton">
+                Singleton <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
