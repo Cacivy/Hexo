@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C#,Design Patterns," />
 
 
 
@@ -58,17 +58,11 @@
 要点
 某个类只能有一个实例
 必须自行创建这个实例
-必须自行向整个系统提供这个实例
-
-&amp;lt;!--break--&amp;gt;
-构建方式
-懒汉方式。指全局的单例实例在第一次被使用时构建。
-
-1public class Singleton&amp;#10;&amp;#123;&amp;#10;    //vola">
+必须自行向整个系统提供这个实例">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Singleton">
-<meta property="og:url" content="http://yoursite.com/2015/11/18/2015-1-16-Singleton/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2015/01/16/Singleton/index.html">
+<meta property="og:site_name" content="Cacivy">
 <meta property="og:description" content="单例模式Wiki
 
 单例模式，也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。
@@ -76,14 +70,8 @@
 要点
 某个类只能有一个实例
 必须自行创建这个实例
-必须自行向整个系统提供这个实例
-
-&amp;lt;!--break--&amp;gt;
-构建方式
-懒汉方式。指全局的单例实例在第一次被使用时构建。
-
-1public class Singleton&amp;#10;&amp;#123;&amp;#10;    //vola">
-<meta property="og:updated_time" content="2015-11-18T03:53:53.797Z">
+必须自行向整个系统提供这个实例">
+<meta property="og:updated_time" content="2015-12-09T02:52:44.279Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Singleton">
 <meta name="twitter:description" content="单例模式Wiki
@@ -93,13 +81,7 @@
 要点
 某个类只能有一个实例
 必须自行创建这个实例
-必须自行向整个系统提供这个实例
-
-&amp;lt;!--break--&amp;gt;
-构建方式
-懒汉方式。指全局的单例实例在第一次被使用时构建。
-
-1public class Singleton&amp;#10;&amp;#123;&amp;#10;    //vola">
+必须自行向整个系统提供这个实例">
 
 
 
@@ -111,10 +93,10 @@
   };
 </script>
 
-  <title> Singleton | Hexo </title>
+  <title> Singleton | Cacivy </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   <!--[if lte IE 8]>
   <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
@@ -142,7 +124,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">Cacivy</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -169,7 +151,27 @@
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            首頁
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -179,7 +181,7 @@
             
               <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            歸檔
+            归档
           </a>
         </li>
       
@@ -189,7 +191,7 @@
             
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
-            標籤
+            标签
           </a>
         </li>
       
@@ -239,12 +241,27 @@
 
         <div class="post-meta">
           <span class="post-time">
-            發表於
-            <time itemprop="dateCreated" datetime="2015-11-18T11:53:53+08:00" content="2015-11-18">
-              2015-11-18
+            发表于
+            <time itemprop="dateCreated" datetime="2015-01-16T00:00:00+08:00" content="2015-01-16">
+              2015-01-16
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Code/" itemprop="url" rel="index">
+                    <span itemprop="name">Code</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -273,18 +290,18 @@
 <li>必须自行创建这个实例</li>
 <li>必须自行向整个系统提供这个实例</li>
 </ol>
-<!--break-->
+<a id="more"></a>
 <h4 id="构建方式">构建方式</h4><ul>
 <li>懒汉方式。指全局的单例实例在第一次被使用时构建。</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton&#10;&#123;&#10;    //volatile:&#19981;&#34987;&#32447;&#31243;&#35775;&#38382;&#21644;&#20462;&#25913;&#10;    private static volatile Singleton Instance = null;&#10;    private static object _lock = new object();&#10;    //&#31169;&#26377;&#26500;&#36896;&#10;    private Singleton() &#123; &#125;&#10;    //&#38145;&#23450;&#23545;&#35937;&#21482;&#33021;&#34987;&#19968;&#20010;&#32447;&#31243;&#35775;&#38382;&#24182;&#36820;&#22238;&#10;    public static Singleton getInstance()&#10;    &#123;&#10;        if (Instance == null)&#10;        &#123;&#10;            lock (_lock)&#10;            &#123;&#10;                if (Instance == null)&#10;                &#123;&#10;                    Instance=new Singleton();&#10;                &#125;&#10;            &#125;&#10;        &#125;&#10;        return Instance;&#10;    &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Singleton</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//volatile:不被线程访问和修改</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">volatile</span> Singleton Instance = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">object</span> _lock = <span class="keyword">new</span> <span class="keyword">object</span>();</span><br><span class="line">    <span class="comment">//私有构造</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span>(<span class="params"></span>) </span>&#123; &#125;</span><br><span class="line">    <span class="comment">//锁定对象只能被一个线程访问并返回</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span>(<span class="params"></span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (Instance == <span class="keyword">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">lock</span> (_lock)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (Instance == <span class="keyword">null</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    Instance=<span class="keyword">new</span> Singleton();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> Instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>上述代码使用了双重锁方式较好地解决了多线程下的单例模式实现。先看内层的if语句块，使用这个语句块时，先进行加锁操作，保证只有一个线程可以访问该语句块，进而保证只创建了一个实例。再看外层的if语句块，这使得每个线程欲获取实例时不必每次都得加锁，因为只有实例为空时（即需要创建一个实例），才需加锁创建，若果已存在一个实例，就直接返回该实例，节省了性能开销。</p>
 </blockquote>
 <ul>
 <li>饿汉方式。指全局的单例实例在类装载时构建。</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton&#10;&#123;&#10;    //&#23454;&#20363;&#31169;&#26377;&#21482;&#35835;&#23545;&#35937;&#10;    private static readonly Singleton Instance = new Singleton();&#10;    //&#31169;&#26377;&#26500;&#36896;&#10;    private Singleton()&#123;&#125;&#10;    //&#36820;&#22238;&#23545;&#35937;&#10;    public static Singleton GetInstance()&#10;    &#123;&#10;        return Instance;&#10;    &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Singleton</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//实例私有只读对象</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">readonly</span> Singleton Instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">    <span class="comment">//私有构造</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span>(<span class="params"></span>)</span>&#123;&#125;</span><br><span class="line">    <span class="comment">//返回对象</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">GetInstance</span>(<span class="params"></span>)</span><br><span class="line">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>上面使用的readonly关键可以跟static一起使用，用于指定该常量是类别级的，它的初始化交由静态构造函数实现，并可以在运行时编译。在这种模式下，无需自己解决线程安全性问题，CLR会给我们解决。由此可以看到这个类被加载时，会自动实例化这个类，而不用在第一次调用GetInstance()后才实例化出唯一的单例对象。</p>
 </blockquote>
@@ -294,12 +311,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag">#C#</a>
+          
+            <a href="/tags/Design-Patterns/" rel="tag">#Design Patterns</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/18/2015-1-10-BitMap/" rel="next" title="BitMap">
+              <a href="/2015/01/10/BitMap/" rel="next" title="BitMap">
                 <i class="fa fa-chevron-left"></i> BitMap
               </a>
             
@@ -356,39 +381,39 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目錄
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            本站概覽
+            站点概览
           </li>
         </ul>
       
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/default_avatar.jpg" alt="John Doe" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">John Doe</p>
+          <img class="site-author-image" src="/images/head.jpg" alt="Cacivy" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Cacivy</p>
         </div>
-        <p class="site-description motion-element" itemprop="description"></p>
+        <p class="site-description motion-element" itemprop="description">Up And Runing</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">分類</span>
-              
+            <a href="/categories">
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">標籤</span>
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">标签</span>
               </a>
           </div>
 
@@ -397,6 +422,48 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/otherid" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/Cacivy" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/Cacivy" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.douban.com/people/67769411" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/Cacivy" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
           
         </div>
 
@@ -444,15 +511,15 @@
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Cacivy</span>
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  主題 -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT
   </a>
