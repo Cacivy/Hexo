@@ -220,118 +220,6 @@
             
               
                 
-                <a class="post-title-link" href="/2015/01/20/LeetCode/" itemprop="url">
-                  LeetCode
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-01-20T00:00:00+08:00" content="2015-01-20">
-              2015-01-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Code/" itemprop="url" rel="index">
-                    <span itemprop="name">Code</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/01/20/LeetCode/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/01/20/LeetCode/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><a href="https://oj.leetcode.com/problemset/algorithms/">LeetCode</a></p>
-<p>之前一直有听说LeetCode，直到昨天才开始试着去”刷题”</p>
-<h3 id="Question1">Question1</h3><blockquote>
-<p>给定的非负整数的列表，排列它们，使得它们形成最大数目。例如，给定[3，30，34，5,9]，最大形成数为9534330。<br>注：该结果可能是非常大的，所以你需要返回一个整数的字符串代替。</p>
-</blockquote>
-<ul>
-<li>Answer</li>
-</ul>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">largestNumber</span>(<span class="params"><span class="keyword">int</span>[] arr</span>)</span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="comment">//转换成List</span></span><br><span class="line">    List&lt;<span class="keyword">int</span>&gt; numList = arr.Where(a =&gt; <span class="keyword">true</span>).ToList();</span><br><span class="line">    <span class="comment">//声明</span></span><br><span class="line">    StringBuilder sr=<span class="keyword">new</span> StringBuilder();</span><br><span class="line">    <span class="keyword">int</span> length = numList.Count;</span><br><span class="line">    <span class="comment">//循环判断</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//找到最大值</span></span><br><span class="line">        <span class="keyword">int</span> max = <span class="keyword">int</span>.Parse(numList.Max(n =&gt; n.ToString()));</span><br><span class="line">        <span class="comment">//拼接</span></span><br><span class="line">        sr.Append(max);</span><br><span class="line">        <span class="comment">//移除</span></span><br><span class="line">        numList.Remove(max);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sr.ToString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>PS:这题本身并不难，只要想到转换成字符串进行比较就可以了</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/01/20/LeetCode/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2015/01/16/Singleton/" itemprop="url">
                   Singleton
                 </a>
@@ -695,7 +583,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
