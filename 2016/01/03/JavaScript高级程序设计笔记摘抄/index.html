@@ -51,19 +51,22 @@
 
 
 
-<meta name="description" content="基本概念3.6.6　label语句使用label语句可以在代码中添加标签，以便将来使用。以下是label语句的语法：label: statement下面是一个示例：123start: for (var i=0; i &amp;lt; count; i++) &amp;#123;    alert(i); &amp;#125;
-这个例子中定义的start标签可以在将来由break或continue语句引用。加标签的语句一般">
+<meta name="description" content="基本概念3.6.6　label语句使用label语句可以在代码中添加标签，以便将来使用。以下是label语句的语法：1label: statement
+下面是一个示例：123start: for (var i=0; i &amp;lt; count; i++) &amp;#123;    alert(i); &amp;#125;
+这个例子中定义的start标签可以在将来由break或continue语句引用。加标签的语句">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript高级程序设计">
 <meta property="og:url" content="http://http://otherid.github.io/2016/01/03/JavaScript高级程序设计笔记摘抄/index.html">
 <meta property="og:site_name" content="Cacivy">
-<meta property="og:description" content="基本概念3.6.6　label语句使用label语句可以在代码中添加标签，以便将来使用。以下是label语句的语法：label: statement下面是一个示例：123start: for (var i=0; i &amp;lt; count; i++) &amp;#123;    alert(i); &amp;#125;
-这个例子中定义的start标签可以在将来由break或continue语句引用。加标签的语句一般">
-<meta property="og:updated_time" content="2016-01-03T02:59:23.938Z">
+<meta property="og:description" content="基本概念3.6.6　label语句使用label语句可以在代码中添加标签，以便将来使用。以下是label语句的语法：1label: statement
+下面是一个示例：123start: for (var i=0; i &amp;lt; count; i++) &amp;#123;    alert(i); &amp;#125;
+这个例子中定义的start标签可以在将来由break或continue语句引用。加标签的语句">
+<meta property="og:updated_time" content="2016-01-04T02:51:15.203Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript高级程序设计">
-<meta name="twitter:description" content="基本概念3.6.6　label语句使用label语句可以在代码中添加标签，以便将来使用。以下是label语句的语法：label: statement下面是一个示例：123start: for (var i=0; i &amp;lt; count; i++) &amp;#123;    alert(i); &amp;#125;
-这个例子中定义的start标签可以在将来由break或continue语句引用。加标签的语句一般">
+<meta name="twitter:description" content="基本概念3.6.6　label语句使用label语句可以在代码中添加标签，以便将来使用。以下是label语句的语法：1label: statement
+下面是一个示例：123start: for (var i=0; i &amp;lt; count; i++) &amp;#123;    alert(i); &amp;#125;
+这个例子中定义的start标签可以在将来由break或continue语句引用。加标签的语句">
 
 
 
@@ -270,8 +273,10 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="基本概念">基本概念</h2><h3 id="3-6-6_label语句">3.6.6　label语句</h3><p>使用label语句可以在代码中添加标签，以便将来使用。以下是label语句的语法：<br>label: statement<br>下面是一个示例：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">start: <span class="keyword">for</span> (var <span class="built_in">i</span>=<span class="number">0</span>; <span class="built_in">i</span> &lt; count; <span class="built_in">i</span>++) <span class="cell">&#123;</span><br><span class="line">    alert(i); </span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+        <span itemprop="articleBody"><h2 id="基本概念">基本概念</h2><h3 id="3-6-6_label语句">3.6.6　label语句</h3><p>使用label语句可以在代码中添加标签，以便将来使用。以下是label语句的语法：<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">label</span>: <span class="string">statement</span></span><br></pre></td></tr></table></figure></p>
+<p>下面是一个示例：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">start: <span class="keyword">for</span> (var <span class="built_in">i</span>=<span class="number">0</span>; <span class="built_in">i</span> &lt; count; <span class="built_in">i</span>++) <span class="cell">&#123;</span><br><span class="line">    alert(i); </span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
 <p>这个例子中定义的start标签可以在将来由break或continue语句引用。加标签的语句一般都要与for语句等循环语句配合使用。</p>
+<a id="more"></a>
 <h3 id="3-6-8_with语句">3.6.8　with语句</h3><p>with语句的作用是将代码的作用域设置到一个特定的对象中。with语句的语法如下：<br>with (expression) statement;<br>定义with语句的目的主要是为了简化多次编写同一个对象的工作，如下面的例子所示：<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable"><span class="keyword">var</span> qs</span> = location.search.substring(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable"><span class="keyword">var</span> hostName</span> = location.hostname;</span><br><span class="line"><span class="variable"><span class="keyword">var</span> url</span> = location.href;</span><br></pre></td></tr></table></figure></p>
 <p>上面几行代码都包含location对象。如果使用with语句，可以把上面的代码改写成如下所示：<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">with(location)&#123;</span><br><span class="line">    <span class="variable"><span class="keyword">var</span> qs</span> = search.substring(<span class="number">1</span>);</span><br><span class="line">    <span class="variable"><span class="keyword">var</span> hostName</span> = hostname;</span><br><span class="line">    <span class="variable"><span class="keyword">var</span> url</span> = href;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>WithStatementExample01.htm<br>在这个重写后的例子中，使用with语句关联了location对象。这意味着在with语句的代码块内部，每个变量首先被认为是一个局部变量，而如果在局部环境中找不到该变量的定义，就会查询location对象中是否有同名的属性。如果发现了同名属性，则以location对象属性的值作为变量的值。<br>严格模式下不允许使用with语句，否则将视为语法错误。<br> 由于大量使用with语句会导致性能下降，同时也会给调试代码造成困难，因此在开发大型应用程序时，不建议使用with语句。</p>
