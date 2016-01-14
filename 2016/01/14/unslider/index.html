@@ -51,19 +51,34 @@
 
 
 
-<meta name="description" content="首先Js本身就有调用浏览器打印的方法1window.print();
-以上代码即可实现当前页打印，但是如果我们要打印页面局部内容呢？">
+<meta name="description" content="unslider官网这是一个(图片)轮播插件，小而轻。
+顶部是该插件的官网链接，BootStrap中文网也做了一个中文站，但是并没有同步更新，下载跳转链接也是404，api是旧的，切勿被坑。
+言归正传，这个js插件可以很好的实现轮播功能，而且可以灵活定制。
+下载
+通过github点击Download ZIP
+git命令(需要安装git bash)
+1git clone git@github.com">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于JS实现Web打印">
-<meta property="og:url" content="http://http://otherid.github.io/2016/01/01/关于JS实现Web打印/index.html">
+<meta property="og:title" content="unslider轮播插件">
+<meta property="og:url" content="http://http://otherid.github.io/2016/01/14/unslider/index.html">
 <meta property="og:site_name" content="Cacivy">
-<meta property="og:description" content="首先Js本身就有调用浏览器打印的方法1window.print();
-以上代码即可实现当前页打印，但是如果我们要打印页面局部内容呢？">
-<meta property="og:updated_time" content="2016-01-04T02:56:36.161Z">
+<meta property="og:description" content="unslider官网这是一个(图片)轮播插件，小而轻。
+顶部是该插件的官网链接，BootStrap中文网也做了一个中文站，但是并没有同步更新，下载跳转链接也是404，api是旧的，切勿被坑。
+言归正传，这个js插件可以很好的实现轮播功能，而且可以灵活定制。
+下载
+通过github点击Download ZIP
+git命令(需要安装git bash)
+1git clone git@github.com">
+<meta property="og:updated_time" content="2016-01-14T10:26:47.717Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于JS实现Web打印">
-<meta name="twitter:description" content="首先Js本身就有调用浏览器打印的方法1window.print();
-以上代码即可实现当前页打印，但是如果我们要打印页面局部内容呢？">
+<meta name="twitter:title" content="unslider轮播插件">
+<meta name="twitter:description" content="unslider官网这是一个(图片)轮播插件，小而轻。
+顶部是该插件的官网链接，BootStrap中文网也做了一个中文站，但是并没有同步更新，下载跳转链接也是404，api是旧的，切勿被坑。
+言归正传，这个js插件可以很好的实现轮播功能，而且可以灵活定制。
+下载
+通过github点击Download ZIP
+git命令(需要安装git bash)
+1git clone git@github.com">
 
 
 
@@ -75,7 +90,7 @@
   };
 </script>
 
-  <title> 关于JS实现Web打印 | Cacivy </title>
+  <title> unslider轮播插件 | Cacivy </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -215,7 +230,7 @@
             
             
               
-                关于JS实现Web打印
+                unslider轮播插件
               
             
           </h1>
@@ -224,8 +239,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-01T00:00:00+08:00" content="2016-01-01">
-              2016-01-01
+            <time itemprop="dateCreated" datetime="2016-01-14T00:00:00+08:00" content="2016-01-14">
+              2016-01-14
             </time>
           </span>
 
@@ -250,8 +265,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/01/关于JS实现Web打印/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/01/关于JS实现Web打印/" itemprop="commentsCount"></span>
+                <a href="/2016/01/14/unslider/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/14/unslider/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -270,15 +285,25 @@
       
 
       
-        <span itemprop="articleBody"><p>首先Js本身就有调用浏览器打印的方法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.print();</span><br></pre></td></tr></table></figure></p>
-<p>以上代码即可实现当前页打印，但是如果我们要打印页面局部内容呢？</p>
-<a id="more"></a>
-<h3 id="html插入标签+JS原生实现">html插入标签+JS原生实现</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="title">title</span>&gt;</span>打印预览简单实现<span class="tag">&lt;/<span class="title">title</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">这是body 里的内容不需要打印，具体的页面设计根据自己的要求自行设计。如果需要一个页面多个tag,可以动态生成tag  </span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--startprint--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span> </span><br><span class="line">这是我需要打印的内容 </span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--endprint--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="handlebars"><span class="xml"> </span><br><span class="line">function preview() </span><br><span class="line">&#123; </span><br><span class="line">var bdhtml=window.document.body.innerHTML;//获取当前页的html代码 </span><br><span class="line">var startStr="<span class="comment">&lt;!--startprint--&gt;</span>";//设置打印开始区域 </span><br><span class="line">var endStr="<span class="comment">&lt;!--endprint--&gt;</span>";//设置打印结束区域 </span><br><span class="line">var printHtml=bdhtml.substring(bdhtml.indexOf(startStr)+startStr.length,bdhtml.indexOf(endStr));//从标记里获取需要打印的页面 </span><br><span class="line"> </span><br><span class="line">window.document.body.innerHTML=printHtml;//需要打印的页面 </span><br><span class="line">window.print(); </span><br><span class="line">window.document.body.innerHTML=bdhtml;//还原界面 </span><br><span class="line">&#125; </span><br><span class="line">preview(); </span><br><span class="line"></span></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p>上面的代码很巧妙的实现了局部打印，还可以使用iframe等方法，但是相对比较繁琐。<br>这里jQuery也提供了插件可以实现同样的效果</p>
-<h3 id="jQuery插件实现">jQuery插件实现</h3><p>1、下载jquery.PrintArea.js。<br>2、调用jquery.min.js和jquery.PrintArea.js<br>3、调用printArea()方法。<br>也是比较简便的方法。</p>
-<p>好，局部打印已经实现了，如果想要更灵活的展示<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="at_rule">@<span class="keyword">media</span> print </span>&#123;</span><br><span class="line">  <span class="id">#nav-area</span> <span class="rules">&#123;<span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;&#125;</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-<p>可以使用以上代码隐藏响应元素。</p>
-<p>ps:Chrome浏览器存在局部打印预览失败的问题，可以尝试加上以下样式<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">position</span>: <span class="tag">fixed</span>;</span><br><span class="line"><span class="tag">top</span>: 0;</span><br><span class="line"><span class="tag">left</span>: 0;</span><br><span class="line"><span class="tag">margin</span>: 0;</span><br></pre></td></tr></table></figure></p>
+        <span itemprop="articleBody"><h1 id="unslider官网"><a href="http://unslider.com/" target="_blank" rel="external">unslider官网</a></h1><p>这是一个(图片)轮播插件，小而轻。</p>
+<p>顶部是该插件的官网链接，BootStrap中文网也做了一个中文站，但是并没有同步更新，下载跳转链接也是404，api是旧的，切勿被坑。</p>
+<p>言归正传，这个js插件可以很好的实现轮播功能，而且可以灵活定制。</p>
+<h3 id="下载">下载</h3><ol>
+<li><a href="https://github.com/idiot/unslider" target="_blank" rel="external">通过github</a><br>点击Download ZIP</li>
+<li><p>git命令(需要安装git bash)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:idiot/unslider.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用<a href="http://bower.io/" target="_blank" rel="external">bower</a>(需要安装node.js),<br>这是Twitter推出的一个Web开发的包管理器，它的强大就不在这细说了。<br>首先安装bower，然后通过bower安装unslider，unslider就会出现在当前目录下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g bower</span><br><span class="line">bower install unslider</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="使用">使用</h3><h4 id="HTML">HTML</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"my-slider"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span>My slide<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span>Another slide<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span>My last slide<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="引入需要的js类库和unslider插件">引入需要的js类库和unslider插件</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"//code.jquery.com/jquery-2.1.4.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/path/to/unslider.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="引入外部样式表(css)">引入外部样式表(css)</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"/path/to/unslider/dist/css/unslider.css"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="js代码">js代码</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">    $(<span class="string">'.my-slider'</span>).unslider();</span><br><span class="line">  &#125;);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>以上是官方给出的例子，很方便，同时可根据需要进行一些修改。</p>
+<h3 id="定制">定制</h3><p>主要介绍一些可定制的Options</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//以下可以根据自己需要进行修改</span></span><br><span class="line">$(<span class="string">'.my-demo-slider'</span>).unslider(&#123;</span><br><span class="line">  autoplay: <span class="literal">true</span>,             <span class="comment">//是否自动切换</span></span><br><span class="line">   animation: <span class="string">'fade'</span>,          <span class="comment">// 动画效果 1.horizontal 2.vertical 3.fade</span></span><br><span class="line">   speed: <span class="number">300</span>,               <span class="comment">// 动画速度</span></span><br><span class="line">   delay: <span class="number">3000</span>,              <span class="comment">//  多少ms切换一次</span></span><br><span class="line">   keys: <span class="literal">false</span>,               <span class="comment">//  键盘控制</span></span><br><span class="line">   nav: <span class="literal">true</span>,               <span class="comment">//  是否显示导航</span></span><br><span class="line">   arrows: <span class="literal">false</span>,            <span class="comment">//   左右切换按钮是否显示</span></span><br><span class="line">   fluid: <span class="literal">false</span>              <span class="comment">//  是否自适应</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 </span>
       
     </div>
@@ -298,17 +323,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/01/16/Singleton/" rel="next" title="Singleton">
-                <i class="fa fa-chevron-left"></i> Singleton
+              <a href="/2016/01/03/JavaScript高级程序设计笔记摘抄/" rel="next" title="JavaScript高级程序设计">
+                <i class="fa fa-chevron-left"></i> JavaScript高级程序设计
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/03/JavaScript高级程序设计笔记摘抄/" rel="prev" title="JavaScript高级程序设计">
-                JavaScript高级程序设计 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -338,8 +359,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/01/关于JS实现Web打印/"
-           data-title="关于JS实现Web打印" data-url="http://http://otherid.github.io/2016/01/01/关于JS实现Web打印/">
+      <div class="ds-thread" data-thread-key="2016/01/14/unslider/"
+           data-title="unslider轮播插件" data-url="http://http://otherid.github.io/2016/01/14/unslider/">
       </div>
     
   </div>
@@ -479,7 +500,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#html插入标签+JS原生实现"><span class="nav-number">1.</span> <span class="nav-text">html插入标签+JS原生实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery插件实现"><span class="nav-number">2.</span> <span class="nav-text">jQuery插件实现</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#unslider官网"><span class="nav-number">1.</span> <span class="nav-text">unslider官网</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载"><span class="nav-number">1.0.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">1.0.2.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#引入需要的js类库和unslider插件"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">引入需要的js类库和unslider插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#引入外部样式表(css)"><span class="nav-number">1.0.2.3.</span> <span class="nav-text">引入外部样式表(css)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#js代码"><span class="nav-number">1.0.2.4.</span> <span class="nav-text">js代码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定制"><span class="nav-number">1.0.3.</span> <span class="nav-text">定制</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
