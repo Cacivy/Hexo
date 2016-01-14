@@ -278,30 +278,14 @@
 
       
         
-          <span itemprop="articleBody">
-            
-              <h1 id="unslider官网"><a href="http://unslider.com/" target="_blank" rel="external">unslider官网</a></h1><p>这是一个(图片)轮播插件，小而轻。</p>
+          <h1 id="unslider官网"><a href="http://unslider.com/">unslider官网</a></h1><p>这是一个(图片)轮播插件，小而轻。</p>
 <p>顶部是该插件的官网链接，BootStrap中文网也做了一个中文站，但是并没有同步更新，下载跳转链接也是404，api是旧的，切勿被坑。</p>
 <p>言归正传，这个js插件可以很好的实现轮播功能，而且可以灵活定制。</p>
-<h3 id="下载">下载</h3><ol>
-<li><a href="https://github.com/idiot/unslider" target="_blank" rel="external">通过github</a><br>点击Download ZIP</li>
-<li><p>git命令(需要安装git bash)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:idiot/unslider.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用<a href="http://bower.io/" target="_blank" rel="external">bower</a>(需要安装node.js),<br>这是Twitter推出的一个Web开发的包管理器，它的强大就不在这细说了。<br>首先安装bower，然后通过bower安装unslider，unslider就会出现在当前目录下</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g bower</span><br><span class="line">bower install unslider</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="使用">使用</h3><h4 id="HTML">HTML</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"my-slider"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span>My slide<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span>Another slide<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span>My last slide<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="引入需要的js类库和unslider插件">引入需要的js类库和unslider插件</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"//code.jquery.com/jquery-2.1.4.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"/path/to/unslider.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="引入外部样式表(css)">引入外部样式表(css)</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"/path/to/unslider/dist/css/unslider.css"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="js代码">js代码</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">    $(<span class="string">'.my-slider'</span>).unslider();</span><br><span class="line">  &#125;);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<p>以上是官方给出的例子，很方便，同时可根据需要进行一些修改。</p>
-<h3 id="定制">定制</h3><p>主要介绍一些可定制的Options</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//以下可以根据自己需要进行修改</span></span><br><span class="line">$(<span class="string">'.my-demo-slider'</span>).unslider(&#123;</span><br><span class="line">  autoplay: <span class="literal">true</span>,             <span class="comment">//是否自动切换</span></span><br><span class="line">   animation: <span class="string">'fade'</span>,          <span class="comment">// 动画效果 1.horizontal 2.vertical 3.fade</span></span><br><span class="line">   speed: <span class="number">300</span>,               <span class="comment">// 动画速度</span></span><br><span class="line">   delay: <span class="number">3000</span>,              <span class="comment">//  多少ms切换一次</span></span><br><span class="line">   keys: <span class="literal">false</span>,               <span class="comment">//  键盘控制</span></span><br><span class="line">   nav: <span class="literal">true</span>,               <span class="comment">//  是否显示导航</span></span><br><span class="line">   arrows: <span class="literal">false</span>,            <span class="comment">//   左右切换按钮是否显示</span></span><br><span class="line">   fluid: <span class="literal">false</span>              <span class="comment">//  是否自适应</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-            
-          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/14/unslider/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
