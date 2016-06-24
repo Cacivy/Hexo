@@ -10,7 +10,7 @@ author: Cacivy
 language: zh-Hans
 timezone:
 avatar: /images/head.jpg
-since: 2015
+since: 2016
 
 # Social links
 social:
@@ -27,7 +27,7 @@ duoshuo_hotartical: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://http://otherid.github.io
+url: https://github.com/Cacivy
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -78,7 +78,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: next
+theme: apollo
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

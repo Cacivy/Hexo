@@ -4,11 +4,11 @@ tags:
   - Algorithm
   - C#
 categories: Code
-date: 2015-01-16 
+date: 2015-01-16
 ---
 
 
-###快速排序
+### 快速排序
 
 [Wiki](http://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)
 
@@ -73,5 +73,3 @@ date: 2015-01-16
         }
     }
 ```
-
-
