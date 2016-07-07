@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/Cacivy/"/>
-  <updated>2016-06-28T09:23:15.996Z</updated>
+  <updated>2016-07-02T06:51:43.236Z</updated>
   <id>https://github.com/Cacivy/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My resume</title>
+    <link href="https://github.com/Cacivy/2016/07/02/%E8%A9%B9%E9%9F%AC%E7%9A%84%E7%AE%80%E5%8E%86/"/>
+    <id>https://github.com/Cacivy/2016/07/02/詹韬的简历/</id>
+    <published>2016-07-02T06:51:43.236Z</published>
+    <updated>2016-07-02T06:51:43.236Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;个人信息&quot;&gt;个人信息&lt;/h3&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;姓名: 詹韬&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;手机: &lt;span class=&quot;number&quot;&gt;13161472239&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;年龄: &lt;span class=&quot;number&quot;&gt;21&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;邮箱: &lt;span class=&quot;number&quot;&gt;609448234&lt;/span&gt;@qq.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;技术栈&quot;&gt;技术栈&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;前端&lt;/p&gt;
+&lt;p&gt;  ​熟练 JQuery  AvalonJS VueJS WebPack ES6 BootStrap&lt;/p&gt;
+&lt;p&gt;  ​了解 MVVM(Vue | Avalon |Augular) Components(React | Vue | Vuex) Grunt Fetch Promise Flex&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;后端&lt;/p&gt;
+&lt;p&gt;  ​熟练 WebForm Asp.Net MVC 多线程 Cors跨域&lt;/p&gt;
+&lt;p&gt;  ​了解 反射 Delegate NodeJS Express Solr&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;​数据库&lt;/p&gt;
+&lt;p&gt;  ​熟练 MySQL&lt;/p&gt;
+&lt;p&gt;  ​了解 Redis MongoDB&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;项目经验&quot;&gt;项目经验&lt;/h3&gt;&lt;h4 id=&quot;某汽车电商前台&quot;&gt;某汽车电商前台&lt;/h4&gt;&lt;p&gt;  ​    负责前端优化，页面需求实现，以及后期维护&lt;/p&gt;
+&lt;p&gt;  ​    使用到的技术 jQuery.lazy AvalonJS 函数节流 transition unslider BootStrap&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.首屏生成纯静态页面，优化页面速度&lt;br&gt;2.保养页、配件选择页面使用AvalonJS，实现类购物车功能、并使store.js缓存数据&lt;br&gt;3.购物车页面实时保存MongoDB，使用函数节流，添加点击态，带来更好的用户体验&lt;br&gt;4.安装店页面使用百度地图API，并使用Geolocation实现地理定位，并计算最近的安装店以及其它距离信息。因为安装店太多使用jQuery.lazy加载安装店图片，节省资源&lt;br&gt;5.使用gulp合并压缩每个页面的js，节省http请求&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;POP商家平台&quot;&gt;POP商家平台&lt;/h4&gt;&lt;p&gt;  负责前后台的架构及开发，一期独立完成&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.最初因为兼容问题选择了AvalonJS，一个很实用的mvvm框架，而且可以兼容到IE6，性能也不错。用来开发了商品管理模块，具体有多下拉框联查、通过table添加商品、弹出框手风琴控件展示数据等，上线半年稳定。&lt;br&gt;​2.第二期使用了AngularJS，对应MVC框架的Controller，主要是CURD页面，通过扩展可以满足很多需求，如w5cvalidator、angular-router，但是感觉不如Avalon简单清晰&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;Saas云平台&quot;&gt;Saas云平台&lt;/h4&gt;&lt;p&gt;  ​    负责用户端项目开发&lt;/p&gt;
+&lt;p&gt;  ​    负责整体项目的开发及搭建，并帮其它项目成员编写可复用的Components&lt;/p&gt;
+&lt;p&gt;  ​    使用Asp.Net MVC + VueJS进行前后端开发，后端主要提供数据接口。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.使用Vue-cli 以及 Vue-Strap、vue-resource进行前端的搭建，并根据业务需求实现其它组件，高定制化，可打包给其它项目使用&lt;br&gt;2.因为并不是纯前端开发，所以并没有使用Vue-router和Vuex，而且使用webpack单页面打包&lt;br&gt;3.项目开发难点主要是一些组件的开发，实现了列入上传、分页、列表等通用控件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;工作期望&quot;&gt;工作期望&lt;/h3&gt;&lt;p&gt;  希望能接触到更多的前端技术，和一群热爱技术的人共事，并且有良好的工作氛围。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;个人信息&quot;&gt;个人信息&lt;/h3&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;姓名: 詹韬&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;手机: &lt;span class=&quot;number&quot;&gt;13161472239&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;年龄: &lt;span class=&quot;number&quot;&gt;21&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;邮箱: &lt;span class=&quot;number&quot;&gt;609448234&lt;/span&gt;@qq.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>使用Hexo搭建Blog</title>
