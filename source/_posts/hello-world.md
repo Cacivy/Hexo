@@ -1,5 +1,6 @@
 ---
 title: 使用Hexo搭建Blog
+date: 2016-06-13
 ---
 
 
