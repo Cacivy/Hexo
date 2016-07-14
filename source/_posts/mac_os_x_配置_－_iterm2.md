@@ -9,7 +9,7 @@ date: 2016-07-13
 > 	iTerm2 is a terminal emulator for OS X that does amazing things
 
 
-![](../images/iterm2.png)
+![](/images/iterm2.png)
 
 <!-- more -->
 
