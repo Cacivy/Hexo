@@ -63,6 +63,8 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 还可以修改oh-my-zsh主题，.oh-my-zsh/themes目录下有各种主题
 ```
+vim ~/.zshrc
+ZSH_THEME="agnoster" # (this is one of the fancy ones)
 ```
 
 至此就大功告成了
