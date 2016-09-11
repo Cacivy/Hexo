@@ -4,7 +4,7 @@ date: 2016-07-13
 ---
 
 
-### Mac OS X 配置 － iTerm2
+### [iTerm2](http://www.iterm2.com/)
 
 > 	iTerm2 is a terminal emulator for OS X that does amazing things
 
@@ -47,7 +47,7 @@ Prefernces > window >BackBround Image
 ```bash
 chsh -s /bin/zsh
 ```
-可惜zsh不是很好用，需要配合一些插件/模版，oh-my-zsh
+可惜zsh不是很好用，需要配合一些插件/模版，如oh-my-zsh
 
 下载包
 
@@ -59,6 +59,12 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 ```bash
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+```
+
+还可以修改oh-my-zsh主题，.oh-my-zsh/themes目录下有各种主题
+```
+vim ~/.zshrc
+ZSH_THEME="agnoster" # (this is one of the fancy ones)
 ```
 
 至此就大功告成了
