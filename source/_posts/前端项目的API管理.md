@@ -1,9 +1,9 @@
 ---
-title:  前端项目中的Resetful API管理
+title:  前端项目中的RESTful API管理
 date: 2017-08-07
 ---
 
-## Resetful API
+## REST API
 
 ```http
 /get /users
@@ -14,7 +14,7 @@ date: 2017-08-07
 /delete /users/:id
 ```
 
-以上是一些基本规范，但Reset不是银弹，比如批量处理、getuser、login
+以上是一些基本规范，但REST不是银弹，比如批量处理、getuser、login
 
 <!--more-->
 
