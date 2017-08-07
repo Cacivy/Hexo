@@ -3,7 +3,7 @@ title:  前端项目中的RESTful API管理
 date: 2017-08-07
 ---
 
-## REST API
+## RESTful API
 
 ```http
 /get /users
