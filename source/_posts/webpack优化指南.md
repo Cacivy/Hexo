@@ -15,7 +15,7 @@ date: 2016-07-25
 
 <!-- more -->
 
-1. 抽取公共库部分合并从html中引入，然后配置externals，如
+- 抽取公共库部分合并从html中引入，然后配置externals，如
 
 ```js
  externals: {
@@ -27,9 +27,9 @@ date: 2016-07-25
   }
 ```
 
-2. ExtractTextPlugin把css文件单独抽离出来
+- ExtractTextPlugin把css文件单独抽离出来
 
-3. gzip压缩
+- gzip压缩
 
 ```js
 new CompressionWebpackPlugin({ //gzip 压缩
@@ -43,13 +43,13 @@ new CompressionWebpackPlugin({ //gzip 压缩
 }),
 ```
 
-4. 忽略moment中其它语言包
+- 忽略moment中其它语言包
 
 ```
 new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /zh/)
 ```
 
-5. 使用DllPlugin抽离公共库，然后通过script标签引入
+- 使用DllPlugin抽离公共库，然后通过script标签引入
 
 ```js
 // webpack.vendor.config.js
