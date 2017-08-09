@@ -9,12 +9,12 @@ logo: /favicon.png
 
 # Comment
 # e.g disqus: seansun
-disqus:
+disqus: http-blog-cacivy-com
 duoshuo:
 
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+ga: UA-85349261-2
 
 # Copyright Infomation
 startyear: 2016
@@ -22,4 +22,4 @@ startyear: 2016
 # Font CDN
 #true : use google fonts api, not stable for chinese visitor sometimes, caused by force majeure factor
 #false: use useso fonts api instead of google's, great response speed for chinese visitor
-googlefonts: false
+googlefonts: true
