@@ -14,15 +14,15 @@ date: 2017-08-07
 /delete /users/:id
 ```
 
-以上是一些基本规范，但REST不是银弹，比如批量处理、getuser、login
+以上是一些基本规范，但REST不是银弹，比如`批量处理`、`getuser`、`login`
 
 <!--more-->
 
 ## Mock Server
 
-前端独立于后端，除了约定API，还需要mock server
+前端独立于后端，除了约定API，还需要`mock server`
 一般使用[json-server](https://github.com/typicode/json-server)配合[faker.js](https://github.com/Marak/faker.js)
-接口测试则是通过postman，并且可以生成文档、分享等
+接口测试则是通过`postman`，并且可以生成文档、分享等
 
 ```js
 // index.js

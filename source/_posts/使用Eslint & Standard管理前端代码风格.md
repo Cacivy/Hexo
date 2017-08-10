@@ -10,9 +10,9 @@ date: 2017-08-09
 
 ## Eslint
 
-eslint是一个QA工具，用来保证团队代码风格一致性，以及避免低级错误，支持JS/JSX文件
+eslint是一个`QA工具`，用来保证团队代码风格一致性，以及避免低级错误，支持JS/JSX文件
 
-通过.eslintrc.json可以对eslint进行配置，并且可以安装插件进行不同代码风格的自动配置
+通过`.eslintrc.json`可以对eslint进行配置，并且可以安装插件进行不同代码风格的自动配置
 
 ## [Standard](https://github.com/standard/standard)
 
@@ -73,6 +73,10 @@ npm install --save-dev eslint-config-standard eslint-config-standard-jsx eslint-
     "strict": 0,
     "no-console": 0,
     "no-unused-vars": 1,
+    "semi-spacing": ["error", {
+      "before": true,
+      "after": true
+    }],
     "jsx-quotes": ["error", "prefer-double"],
     "react/prop-types": 0,
     "react/no-children-prop": 0,
@@ -92,6 +96,7 @@ npm install --save-dev eslint-config-standard eslint-config-standard-jsx eslint-
 <div class="tip">
 
 因为standard在jsx中会默认使用单引号的规则，所以需要加上`"jsx-quotes": ["error", "prefer-double"]`保证jsx中属性为双引号
+还有`semi-spacing`需要设置和standard一致
 
 </div>
 
