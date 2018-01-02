@@ -9,4 +9,4 @@ install:
   - yarn
 script:
   - hexo g
-  - hexo d
+  - hexo d --config repository=https://${GH_TOKEN}@github.com/Cacivy/cacivy.github.io.git
