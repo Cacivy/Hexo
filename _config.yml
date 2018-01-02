@@ -90,5 +90,5 @@ archive_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/Cacivy/cacivy.github.io.git
+  repository: https://${GH_TOKEN}@github.com/Cacivy/cacivy.github.io.git
   brandch: master
