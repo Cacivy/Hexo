@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: build
-  image: node
+  image: node:8.11.2
   environment:
     GH_TOKEN:
       from_secret: GH_TOKEN
