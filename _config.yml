@@ -82,7 +82,7 @@ theme: apollo
 
 archive_generator:
     per_page: 0
-    yearly: false
+    yearly: true
     monthly: false
     daily: false
 

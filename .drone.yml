@@ -11,7 +11,7 @@ steps:
   commands:
   - git config --global user.email "609448234@qq.com"
   - git config --global user.name "cacivy"
-  - sed -i'' "s~//github.com/Cacivy/cacivy.github.io.git~//${GH_TOKEN}:x-oauth-basic@github.com/Cacivy/cacivy.github.io.git~" _config.yml
+  - sed -i'' "s~//github.com/Cacivy/cacivy.github.io.git~//$${GH_TOKEN}:x-oauth-basic@github.com/Cacivy/cacivy.github.io.git~" _config.yml
   - yarn
   - yarn build
   - yarn deploy
